@@ -12,7 +12,6 @@ namespace GoogleTest.Pages
         private readonly By xPath = By.XPath("//div[@class='yuRUbf']//a/br/following-sibling::h3");
         private readonly IWebDriver driver;
         private readonly WebDriverWait wait;
-        private readonly IWebElement kurac;
 
         public GoogleHomePage(IWebDriver driver)
         {

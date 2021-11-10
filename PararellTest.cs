@@ -6,10 +6,6 @@ using GoogleTest.Pages;
 
 namespace GoogleTest
 {
-    /**private readonly By searchBox = By.Name("q");
-    private readonly IWebDriver driver;
-    private readonly WebDriverWait wait;
-    **/
 
     public class ParallelTest : Base
     {
@@ -22,14 +18,13 @@ namespace GoogleTest
             driver.Manage().Window.Maximize();
         }
 
-
         [Test, Category("google_search")]
         public void SearchGoogle()
         {    
             googleHomePage.Open();
             googleHomePage.Search("Facebook");
             Assert.AreEqual(googleHomePage.GetLinkTitle(), title);
-
+            
         }
     }
 }
